@@ -1,7 +1,7 @@
 // BusinessList.js
 
 import React from 'react';
-import Business from './Business'; // Make sure to provide the correct path to the Business component
+import Business from '../Business/Business'; // Make sure to provide the correct path to the Business component
 //import './BusinessList.css'; // Create this CSS file for any additional styling
 import { Row } from 'react-bootstrap';
 

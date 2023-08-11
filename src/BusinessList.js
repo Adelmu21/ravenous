@@ -2,7 +2,8 @@
 
 import React from 'react';
 import Business from './Business'; // Make sure to provide the correct path to the Business component
-import './BusinessList.css'; // Create this CSS file for styling if needed
+import './BusinessList.css'; // Create this CSS file for any additional styling
+import { CardDeck } from 'react-bootstrap';
 
 const BusinessList = () => {
   const businesses = [
@@ -60,11 +61,11 @@ const BusinessList = () => {
   ];
 
   return (
-    <div className="BusinessList">
+    <CardDeck className="BusinessList">
       {businesses.map((business) => (
         <Business key={business.id} business={business} />
       ))}
-    </div>
+    </CardDeck>
   );
 };
 

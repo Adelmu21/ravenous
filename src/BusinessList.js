@@ -2,8 +2,8 @@
 
 import React from 'react';
 import Business from './Business'; // Make sure to provide the correct path to the Business component
-import './BusinessList.css'; // Create this CSS file for any additional styling
-import { CardDeck } from 'react-bootstrap';
+//import './BusinessList.css'; // Create this CSS file for any additional styling
+import { Row } from 'react-bootstrap';
 
 const BusinessList = () => {
   const businesses = [
@@ -11,8 +11,8 @@ const BusinessList = () => {
     // You can have multiple business objects in this array
     {
       id: 1,
-      imageSrc: 'https://placekitten.com/200/200',
-      name: 'Sample Restaurant 1',
+      imageSrc: 'https://loveincorporated.blob.core.windows.net/contentimages/gallery/70bc81c8-b277-407d-8c3a-5c1a3e501732-4-hamburger.jpg',
+      name: 'Hamburgers',
       address: '123 Sample Street',
       city: 'Sample City',
       state: 'SS',
@@ -24,8 +24,8 @@ const BusinessList = () => {
     // Add more business objects as needed
     {
         id: 2,
-        imageSrc: 'https://placekitten.com/200/200',
-        name: 'Sample Restaurant 2',
+        imageSrc: 'https://cdnfiles.hdrcreme.com/68657/medium/2aa.jpg?1535283404',
+        name: 'Pizzeria',
         address: '456 Sample Avenue',
         city: 'Sampleville',
         state: 'SV',
@@ -36,7 +36,7 @@ const BusinessList = () => {
       },
       {
         id: 3,
-        imageSrc: 'https://placekitten.com/200/200',
+        imageSrc: 'https://www.timeoutabudhabi.com/public/images/2020/06/24/Cafe-302.jpg',
         name: 'Cafe Delight',
         address: '789 Java Lane',
         city: 'Codeville',
@@ -48,7 +48,7 @@ const BusinessList = () => {
       },
       {
         id: 4,
-        imageSrc: 'https://placekitten.com/200/200',
+        imageSrc: 'https://149434078.v2.pressablecdn.com/wp-content/uploads/2021/02/Washington-DC-Restaurants-DC-Tacos-Mezcalero-Cocina-Mexicana-002-credit-Keryn-Means-800x600.jpg',
         name: 'Tasty Tacos',
         address: '321 Taco Street',
         city: 'Flavor City',
@@ -61,11 +61,11 @@ const BusinessList = () => {
   ];
 
   return (
-    <CardDeck className="BusinessList">
+    <Row className="BusinessList">
       {businesses.map((business) => (
         <Business key={business.id} business={business} />
       ))}
-    </CardDeck>
+    </Row>
   );
 };
 
